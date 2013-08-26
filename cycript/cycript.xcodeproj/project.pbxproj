@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D008ED2517A2E47D0047DEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D008ED2417A2E47D0047DEB0 /* Foundation.framework */; };
+		D008ED3D17A2E4B80047DEB0 /* libffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D008ED3817A2E4A50047DEB0 /* libffi.a */; };
+		D008ED3F17A2E4ED0047DEB0 /* ConvertUTF.c in Sources */ = {isa = PBXBuildFile; fileRef = D008ED3E17A2E4ED0047DEB0 /* ConvertUTF.c */; };
+		D008ED4117A2E4F70047DEB0 /* Highlight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4017A2E4F70047DEB0 /* Highlight.cpp */; };
+		D008ED4317A2E4FE0047DEB0 /* Network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4217A2E4FE0047DEB0 /* Network.cpp */; };
+		D008ED4517A2E5050047DEB0 /* Output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4417A2E5050047DEB0 /* Output.cpp */; };
+		D008ED4717A2E50C0047DEB0 /* Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4617A2E50C0047DEB0 /* Parser.cpp */; };
+		D008ED4917A2E5120047DEB0 /* Replace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4817A2E5120047DEB0 /* Replace.cpp */; };
+		D008ED4B17A2E5840047DEB0 /* Bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4A17A2E5840047DEB0 /* Bridge.cpp */; };
+		D008ED4D17A2E5910047DEB0 /* Execute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4C17A2E5910047DEB0 /* Execute.cpp */; };
+		D008ED4F17A2E5990047DEB0 /* JavaScriptCore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED4E17A2E5990047DEB0 /* JavaScriptCore.cpp */; };
+		D008ED5117A2E5A20047DEB0 /* Library.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5017A2E5A20047DEB0 /* Library.cpp */; };
+		D008ED5517A2E5C30047DEB0 /* copy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5217A2E5C30047DEB0 /* copy.cpp */; };
+		D008ED5617A2E5C30047DEB0 /* ffi_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5317A2E5C30047DEB0 /* ffi_type.cpp */; };
+		D008ED5717A2E5C30047DEB0 /* parse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5417A2E5C30047DEB0 /* parse.cpp */; };
+		D008ED5A17A2E5F00047DEB0 /* Output.mm in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5917A2E5F00047DEB0 /* Output.mm */; };
+		D008ED5C17A2E5F80047DEB0 /* Replace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5B17A2E5F80047DEB0 /* Replace.cpp */; };
+		D008ED5E17A2E5FD0047DEB0 /* Library.mm in Sources */ = {isa = PBXBuildFile; fileRef = D008ED5D17A2E5FD0047DEB0 /* Library.mm */; };
+		D008ED6217A2EC8B0047DEB0 /* lex.cy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D008ED6117A2EC8B0047DEB0 /* lex.cy.cpp */; };
+		D008ED9B17A31C7C0047DEB0 /* Cycript.tab.cc in Sources */ = {isa = PBXBuildFile; fileRef = D008ED9A17A31C7C0047DEB0 /* Cycript.tab.cc */; };
+		D07514C617CB038F0055B2FA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07514C517CB038F0055B2FA /* JavaScriptCore.framework */; };
+		D07514CB17CB063B0055B2FA /* cycript.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D07514C917CB061A0055B2FA /* cycript.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D008ED3717A2E4A50047DEB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D008ED3217A2E4A50047DEB0 /* libffi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6F980BA147386130008F121;
+			remoteInfo = "libffi iOS";
+		};
+		D008ED3917A2E4A50047DEB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D008ED3217A2E4A50047DEB0 /* libffi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6C43CB3D1534E9D100162364;
+			remoteInfo = "libffi OS X";
+		};
+		D008ED3B17A2E4B00047DEB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D008ED3217A2E4A50047DEB0 /* libffi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F6F980B9147386130008F121;
+			remoteInfo = "libffi iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D008ED1F17A2E47D0047DEB0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				D07514CB17CB063B0055B2FA /* cycript.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D008ED2117A2E47D0047DEB0 /* libcycript.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcycript.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D008ED2417A2E47D0047DEB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D008ED3217A2E4A50047DEB0 /* libffi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libffi.xcodeproj; path = libffi/libffi.xcodeproj; sourceTree = "<group>"; };
+		D008ED3E17A2E4ED0047DEB0 /* ConvertUTF.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ConvertUTF.c; path = libcycript/ConvertUTF.c; sourceTree = SOURCE_ROOT; };
+		D008ED4017A2E4F70047DEB0 /* Highlight.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Highlight.cpp; path = libcycript/Highlight.cpp; sourceTree = SOURCE_ROOT; };
+		D008ED4217A2E4FE0047DEB0 /* Network.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Network.cpp; path = libcycript/Network.cpp; sourceTree = SOURCE_ROOT; };
+		D008ED4417A2E5050047DEB0 /* Output.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Output.cpp; path = libcycript/Output.cpp; sourceTree = SOURCE_ROOT; };
+		D008ED4617A2E50C0047DEB0 /* Parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Parser.cpp; path = libcycript/Parser.cpp; sourceTree = SOURCE_ROOT; };
+		D008ED4817A2E5120047DEB0 /* Replace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Replace.cpp; path = libcycript/Replace.cpp; sourceTree = SOURCE_ROOT; };
+		D008ED4A17A2E5840047DEB0 /* Bridge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bridge.cpp; path = libcycript/Bridge.cpp; sourceTree = SOURCE_ROOT; };
+		D008ED4C17A2E5910047DEB0 /* Execute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Execute.cpp; path = libcycript/Execute.cpp; sourceTree = SOURCE_ROOT; };
+		D008ED4E17A2E5990047DEB0 /* JavaScriptCore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JavaScriptCore.cpp; path = libcycript/JavaScriptCore.cpp; sourceTree = SOURCE_ROOT; };
+		D008ED5017A2E5A20047DEB0 /* Library.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Library.cpp; path = libcycript/Library.cpp; sourceTree = SOURCE_ROOT; };
+		D008ED5217A2E5C30047DEB0 /* copy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = copy.cpp; path = libcycript/sig/copy.cpp; sourceTree = SOURCE_ROOT; };
+		D008ED5317A2E5C30047DEB0 /* ffi_type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ffi_type.cpp; path = libcycript/sig/ffi_type.cpp; sourceTree = SOURCE_ROOT; };
+		D008ED5417A2E5C30047DEB0 /* parse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = parse.cpp; path = libcycript/sig/parse.cpp; sourceTree = SOURCE_ROOT; };
+		D008ED5917A2E5F00047DEB0 /* Output.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Output.mm; path = libcycript/ObjectiveC/Output.mm; sourceTree = SOURCE_ROOT; };
+		D008ED5B17A2E5F80047DEB0 /* Replace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Replace.cpp; path = libcycript/ObjectiveC/Replace.cpp; sourceTree = SOURCE_ROOT; };
+		D008ED5D17A2E5FD0047DEB0 /* Library.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Library.mm; path = libcycript/ObjectiveC/Library.mm; sourceTree = SOURCE_ROOT; };
+		D008ED6117A2EC8B0047DEB0 /* lex.cy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lex.cy.cpp; path = libcycript/lex.cy.cpp; sourceTree = SOURCE_ROOT; };
+		D008ED9A17A31C7C0047DEB0 /* Cycript.tab.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cycript.tab.cc; path = libcycript/Cycript.tab.cc; sourceTree = SOURCE_ROOT; };
+		D07514C517CB038F0055B2FA /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		D07514C917CB061A0055B2FA /* cycript.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cycript.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D008ED1E17A2E47D0047DEB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D008ED3D17A2E4B80047DEB0 /* libffi.a in Frameworks */,
+				D07514C617CB038F0055B2FA /* JavaScriptCore.framework in Frameworks */,
+				D008ED2517A2E47D0047DEB0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D008ED1817A2E47D0047DEB0 = {
+			isa = PBXGroup;
+			children = (
+				D07514C917CB061A0055B2FA /* cycript.h */,
+				D008ED2617A2E47D0047DEB0 /* cycript */,
+				D008ED2317A2E47D0047DEB0 /* Frameworks */,
+				D008ED2217A2E47D0047DEB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D008ED2217A2E47D0047DEB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D008ED2117A2E47D0047DEB0 /* libcycript.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D008ED2317A2E47D0047DEB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D008ED3217A2E4A50047DEB0 /* libffi.xcodeproj */,
+				D07514C517CB038F0055B2FA /* JavaScriptCore.framework */,
+				D008ED2417A2E47D0047DEB0 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D008ED2617A2E47D0047DEB0 /* cycript */ = {
+			isa = PBXGroup;
+			children = (
+				D008ED3E17A2E4ED0047DEB0 /* ConvertUTF.c */,
+				D008ED4017A2E4F70047DEB0 /* Highlight.cpp */,
+				D008ED4217A2E4FE0047DEB0 /* Network.cpp */,
+				D008ED4417A2E5050047DEB0 /* Output.cpp */,
+				D008ED4617A2E50C0047DEB0 /* Parser.cpp */,
+				D008ED4817A2E5120047DEB0 /* Replace.cpp */,
+				D008ED4A17A2E5840047DEB0 /* Bridge.cpp */,
+				D008ED4C17A2E5910047DEB0 /* Execute.cpp */,
+				D008ED4E17A2E5990047DEB0 /* JavaScriptCore.cpp */,
+				D008ED5017A2E5A20047DEB0 /* Library.cpp */,
+				D008ED5817A2E5C70047DEB0 /* sig */,
+				D008ED5F17A2E6020047DEB0 /* ObjectiveC */,
+				D008ED6317A2EC8E0047DEB0 /* Generated */,
+			);
+			path = cycript;
+			sourceTree = "<group>";
+		};
+		D008ED3317A2E4A50047DEB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D008ED3817A2E4A50047DEB0 /* libffi.a */,
+				D008ED3A17A2E4A50047DEB0 /* libffi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D008ED5817A2E5C70047DEB0 /* sig */ = {
+			isa = PBXGroup;
+			children = (
+				D008ED5217A2E5C30047DEB0 /* copy.cpp */,
+				D008ED5317A2E5C30047DEB0 /* ffi_type.cpp */,
+				D008ED5417A2E5C30047DEB0 /* parse.cpp */,
+			);
+			name = sig;
+			sourceTree = "<group>";
+		};
+		D008ED5F17A2E6020047DEB0 /* ObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				D008ED5917A2E5F00047DEB0 /* Output.mm */,
+				D008ED5B17A2E5F80047DEB0 /* Replace.cpp */,
+				D008ED5D17A2E5FD0047DEB0 /* Library.mm */,
+			);
+			name = ObjectiveC;
+			sourceTree = "<group>";
+		};
+		D008ED6317A2EC8E0047DEB0 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				D008ED6117A2EC8B0047DEB0 /* lex.cy.cpp */,
+				D008ED9A17A31C7C0047DEB0 /* Cycript.tab.cc */,
+			);
+			name = Generated;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D008ED2017A2E47D0047DEB0 /* cycript */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D008ED2F17A2E47D0047DEB0 /* Build configuration list for PBXNativeTarget "cycript" */;
+			buildPhases = (
+				D008ED6017A2E7CA0047DEB0 /* Preprocess Sources */,
+				D008ED1D17A2E47D0047DEB0 /* Sources */,
+				D008ED1E17A2E47D0047DEB0 /* Frameworks */,
+				D008ED1F17A2E47D0047DEB0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D008ED3C17A2E4B00047DEB0 /* PBXTargetDependency */,
+			);
+			name = cycript;
+			productName = cycript;
+			productReference = D008ED2117A2E47D0047DEB0 /* libcycript.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D008ED1917A2E47D0047DEB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Conrad Kramer";
+			};
+			buildConfigurationList = D008ED1C17A2E47D0047DEB0 /* Build configuration list for PBXProject "cycript" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D008ED1817A2E47D0047DEB0;
+			productRefGroup = D008ED2217A2E47D0047DEB0 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D008ED3317A2E4A50047DEB0 /* Products */;
+					ProjectRef = D008ED3217A2E4A50047DEB0 /* libffi.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D008ED2017A2E47D0047DEB0 /* cycript */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D008ED3817A2E4A50047DEB0 /* libffi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libffi.a;
+			remoteRef = D008ED3717A2E4A50047DEB0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D008ED3A17A2E4A50047DEB0 /* libffi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libffi.a;
+			remoteRef = D008ED3917A2E4A50047DEB0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D008ED6017A2E7CA0047DEB0 /* Preprocess Sources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"\"$(SRCROOT)/libcycript/Cycript.yy.in\"",
+				"\"$(SRCROOT)/libcycript/Cycript.l.in\"",
+			);
+			name = "Preprocess Sources";
+			outputPaths = (
+				"\"$(SRCROOT)/libcycript/Cycript.yy\"",
+				"\"$(SRCROOT)/libcycript/Cycript.l\"",
+				"\"$(SRCROOT)/libcycript/lex.cy.cpp\"",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/libcycript/Filter.sh\" < \"$SRCROOT/libcycript/Cycript.l.in\" > \"$SRCROOT/libcycript/Cycript.l\" Bison23 C ObjectiveC\nflex -t \"$SRCROOT/libcycript/Cycript.l\" | sed -e 's/int yyl;/yy_size_t yyl;/;s/int yyleng_r;/yy_size_t yyleng_r;/' > \"$SRCROOT/libcycript/lex.cy.cpp\"\n\n\"$SRCROOT/libcycript/Filter.sh\" < \"$SRCROOT/libcycript/Cycript.yy.in\" > \"$SRCROOT/libcycript/Cycript.yy\" Bison23 C ObjectiveC\ncd \"$SRCROOT/libcycript/\"\nbison -v --report=state Cycript.yy\n! grep -n '^ *$$default  reduce using rule [0-9]* (Lex[A-Z][^)]*)$$' \"$SRCROOT/libcycript/Cycript.output\" -B 2 | grep 'shift, and go to state [0-9]*$$'\n! grep -n '^ *$$default  reduce using rule [0-9]* (Lex[A-Z][^)]*)$$' \"$SRCROOT/libcycript/Cycript.output\" -B 2 | grep -v '$$default' | grep 'reduce using rule [0-9]* ([^)]*)$$'\n\n\"$SRCROOT/libcycript/Bridge.sh\" \"$SRCROOT/libcycript/Bridge.def\" > \"$SRCROOT/libcycript/Bridge.gperf\"\ngperf \"$SRCROOT/libcycript/Bridge.gperf\" | sed -e 's/defined __GNUC_STDC_INLINE__ || defined __GNUC_GNU_INLINE__/0/' > \"$SRCROOT/libcycript/Bridge.hpp\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D008ED1D17A2E47D0047DEB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D008ED3F17A2E4ED0047DEB0 /* ConvertUTF.c in Sources */,
+				D008ED4117A2E4F70047DEB0 /* Highlight.cpp in Sources */,
+				D008ED4317A2E4FE0047DEB0 /* Network.cpp in Sources */,
+				D008ED4517A2E5050047DEB0 /* Output.cpp in Sources */,
+				D008ED4717A2E50C0047DEB0 /* Parser.cpp in Sources */,
+				D008ED4917A2E5120047DEB0 /* Replace.cpp in Sources */,
+				D008ED4B17A2E5840047DEB0 /* Bridge.cpp in Sources */,
+				D008ED4D17A2E5910047DEB0 /* Execute.cpp in Sources */,
+				D008ED4F17A2E5990047DEB0 /* JavaScriptCore.cpp in Sources */,
+				D008ED5117A2E5A20047DEB0 /* Library.cpp in Sources */,
+				D008ED5517A2E5C30047DEB0 /* copy.cpp in Sources */,
+				D008ED5617A2E5C30047DEB0 /* ffi_type.cpp in Sources */,
+				D008ED5717A2E5C30047DEB0 /* parse.cpp in Sources */,
+				D008ED5A17A2E5F00047DEB0 /* Output.mm in Sources */,
+				D008ED5C17A2E5F80047DEB0 /* Replace.cpp in Sources */,
+				D008ED5E17A2E5FD0047DEB0 /* Library.mm in Sources */,
+				D008ED6217A2EC8B0047DEB0 /* lex.cy.cpp in Sources */,
+				D008ED9B17A31C7C0047DEB0 /* Cycript.tab.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D008ED3C17A2E4B00047DEB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libffi iOS";
+			targetProxy = D008ED3B17A2E4B00047DEB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D008ED2D17A2E47D0047DEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"YYDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/libcycript\"",
+					"\"$(SRCROOT)/libffi/ios/include\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D008ED2E17A2E47D0047DEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/libcycript\"",
+					"\"$(SRCROOT)/libffi/ios/include\"",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D008ED3017A2E47D0047DEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/cycript.dst;
+				OTHER_CFLAGS = (
+					"-DCY_EXECUTE",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D008ED3117A2E47D0047DEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/cycript.dst;
+				OTHER_CFLAGS = (
+					"-DCY_EXECUTE",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D008ED1C17A2E47D0047DEB0 /* Build configuration list for PBXProject "cycript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D008ED2D17A2E47D0047DEB0 /* Debug */,
+				D008ED2E17A2E47D0047DEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D008ED2F17A2E47D0047DEB0 /* Build configuration list for PBXNativeTarget "cycript" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D008ED3017A2E47D0047DEB0 /* Debug */,
+				D008ED3117A2E47D0047DEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D008ED1917A2E47D0047DEB0 /* Project object */;
+}

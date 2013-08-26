@@ -1,0 +1,6 @@
+[submodule "cycript/libcycript"]
+	path = cycript/libcycript
+	url = git://git.saurik.com/cycript.git
+[submodule "cycript/libffi"]
+	path = cycript/libffi
+	url = git://github.com/zwaldowski/libffi.git
