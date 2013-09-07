@@ -260,6 +260,7 @@
 		D075152C17CB085A0055B2FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -268,6 +269,7 @@
 		D075152D17CB085A0055B2FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
