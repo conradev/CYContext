@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString * const CYErrorLineKey;
+extern NSString * const CYErrorNameKey;
+extern NSString * const CYErrorMessageKey;
+
 @interface CYContext : NSObject
 
 - (NSString *)evaluateCycript:(NSString *)cycript error:(NSError **)error;

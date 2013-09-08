@@ -12,6 +12,10 @@
 
 #import "CYContext.h"
 
+NSString * const CYErrorLineKey = @"CYErrorLineKey";
+NSString * const CYErrorNameKey = @"CYErrorNameKey";
+NSString * const CYErrorMessageKey = @"CYErrorMessageKey";
+
 @implementation CYContext {
     JSGlobalContextRef _context;
 }
@@ -56,14 +60,29 @@
     }
 
     // If an exception was thrown, convert it into an NSError
-    if (exception) {
-        JSStringRef string = JSValueToStringCopy(_context, exception, NULL);
-        NSString *errorDescription = (__bridge_transfer NSString *)JSStringCopyCFString(kCFAllocatorDefault, string);
+    if (exception && error) {
+        JSObjectRef exceptionObject = JSValueToObject(_context, exception, NULL);
+
+        NSInteger line = (NSInteger)JSValueToNumber(_context, JSObjectGetProperty(_context, exceptionObject, JSStringCreateWithUTF8CString("line"), NULL), NULL);
+
+        JSStringRef string = JSValueToStringCopy(_context, JSObjectGetProperty(_context, exceptionObject, JSStringCreateWithUTF8CString("name"), NULL), NULL);
+        NSString *name = (__bridge_transfer NSString *)JSStringCopyCFString(kCFAllocatorDefault, string);
         JSStringRelease(string);
-        if (error) {
-            NSDictionary *userInfo = @{ NSLocalizedDescriptionKey: errorDescription };
-            *error = [NSError errorWithDomain:@"CYContextDomain" code:0 userInfo:userInfo];
-        }
+
+        string = JSValueToStringCopy(_context, JSObjectGetProperty(_context, exceptionObject, JSStringCreateWithUTF8CString("message"), NULL), NULL);
+        NSString *message = (__bridge_transfer NSString *)JSStringCopyCFString(kCFAllocatorDefault, string);
+        JSStringRelease(string);
+
+        string = JSValueToStringCopy(_context, exception, NULL);
+        NSString *description = (__bridge_transfer NSString *)JSStringCopyCFString(kCFAllocatorDefault, string);
+        JSStringRelease(string);
+
+        NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+        [userInfo setValue:@(line) forKey:CYErrorLineKey];
+        [userInfo setValue:name forKey:CYErrorNameKey];
+        [userInfo setValue:message forKey:CYErrorMessageKey];
+        [userInfo setValue:description forKey:NSLocalizedDescriptionKey];
+        *error = [NSError errorWithDomain:@"CYContextDomain" code:0 userInfo:userInfo];
     }
 
     return resultString;
